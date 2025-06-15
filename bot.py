@@ -63,7 +63,8 @@ async def upload_image_to_telegram(image_bytes: bytes, diagram_code: str, user_i
             message = await bot.send_photo(
                 chat_id=user_id,
                 photo=photo,
-                caption="🔄 Preparing image for inline mode..."
+                caption="🔄 Preparing image for inline mode...",
+                disable_notification=True
             )
             file_id = message.photo[-1].file_id  # Get the largest photo
             
