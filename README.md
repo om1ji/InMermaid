@@ -2,6 +2,9 @@
 
 A Telegram bot for rendering Mermaid diagrams in inline mode. Similar to [InLaTeXbot](https://github.com/vdrhtc/InLaTeXbot) but for Mermaid diagrams.
 
+![image](https://github.com/user-attachments/assets/939d0907-0e07-441e-a9c1-58a119d080f5)
+
+
 ## How It Works
 
 ### Inline Mode
@@ -13,7 +16,7 @@ A Telegram bot for rendering Mermaid diagrams in inline mode. Similar to [InLaTe
 ### Direct Messages
 1. Start a chat with the bot
 2. Send your Mermaid diagram code
-3. Receive a high-quality PNG image
+3. Receive a PNG image
 
 ## Installation
 
