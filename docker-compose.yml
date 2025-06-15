@@ -1,0 +1,15 @@
+services:
+  inmermaid-bot:
+    build: .
+    container_name: inmermaid-bot
+    restart: unless-stopped
+    environment:
+      - BOT_TOKEN=${BOT_TOKEN}
+    volumes:
+      - ./temp_images:/app/temp_images
+      - ./logs:/app/logs
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3" 
