@@ -34,6 +34,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN python -m playwright install chromium
 RUN python -m playwright install-deps
 
+# Bundle mermaid so renders don't hit the CDN
+ADD https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js /app/static/mermaid.min.js
+
 COPY . .
 
 ENV PYTHONPATH=/app

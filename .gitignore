@@ -138,3 +138,6 @@ bot.log
 # OS
 .DS_Store
 Thumbs.db
+
+# Mermaid bundle, downloaded at Docker build time
+static/
